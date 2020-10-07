@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
-PATH_TO_WORKSPACE = "/github/workspace/"
-PATH_TO_RUN_FILE = $PATH_TO_WORKSPACE$2
+PATH_TO_WORKSPACE="/github/workspace/"
+PATH_TO_RUN_FILE=$PATH_TO_WORKSPACE$2
 
 echo "Hello $1"
 time=$(date)
