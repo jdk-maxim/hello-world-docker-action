@@ -7,6 +7,7 @@ echo "ls of workspace"
 ls $PATH_TO_WORKSPACE
 
 cat /github/workspace/README.md
+file /github/workspace/push_actions.sh
 
 echo "Hello $1"
 time=$(date)
