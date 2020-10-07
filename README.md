@@ -1,21 +1,22 @@
-# Hello world docker action
+# Tensor Flow Docker Action'
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action uses the tensorflow docker to run any required tests
 
 ## Inputs
 
-### `who-to-greet`
+### `file-to-run`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** The name of shell script to execute and capture status output of
+defult run_me.sh
 
 ## Outputs
 
-### `time`
+### `file_run_status`
 
-The time we greeted you.
+Numerical exit code resulting from `file-to-run`
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
+uses: jdk-maxim/tensorflow-docker-action@master
 with:
-  who-to-greet: 'Mona the Octocat'
+  file-to-run: 'shell_script_to_run.sh'
