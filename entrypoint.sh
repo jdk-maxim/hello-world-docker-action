@@ -3,6 +3,11 @@
 PATH_TO_WORKSPACE="/github/workspace/"
 PATH_TO_RUN_FILE=$PATH_TO_WORKSPACE$2
 
+echo "ls of workspace"
+ls $PATH_TO_WORKSPACE
+
+cat /github/workspace/README.md
+
 echo "Hello $1"
 time=$(date)
 echo "::set-output name=time::$time"
