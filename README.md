@@ -1,6 +1,6 @@
-# Tensor Flow Docker Action'
+# Pytorch Requirements Check Action
 
-This action uses the tensorflow docker to run any required tests
+This action uses a pytorch docker to attempt installation of requirements.txt
 
 ## Inputs
 
@@ -17,6 +17,6 @@ Numerical exit code resulting from `file-to-run`
 
 ## Example usage
 
-uses: jdk-maxim/tensorflow-docker-action@master
+uses: jdk-maxim/pytorch-requirements-check-action@master
 with:
   file-to-run: 'shell_script_to_run.sh'
