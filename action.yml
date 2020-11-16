@@ -1,6 +1,6 @@
 # action.yml
-name: 'tensorflow-docker-action'
-description: 'Attempts to install all requirements, and run pylint in tensorflow docker'
+name: 'pytorch-docker-regression-action'
+description: 'Provides Pytorch docker to execute generic regression tests'
 inputs:
   file-to-run:  # id of input
     description: 'Action file to run as test'
