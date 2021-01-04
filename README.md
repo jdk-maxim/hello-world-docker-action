@@ -1,6 +1,6 @@
 # Pytorch Requirements Check Action
 
-This action uses a pytorch docker to attempt installation of requirements.txt
+This action uses a pytorch docker to execute a shell script.  The script may be used for generic testing needs.
 
 ## Inputs
 
@@ -17,6 +17,6 @@ Numerical exit code resulting from `file-to-run`
 
 ## Example usage
 
-uses: jdk-maxim/pytorch-requirements-check-action@master
+uses: MaximIntegratedAI/pytorch-docker-action@v1
 with:
-  file-to-run: 'shell_script_to_run.sh'
+  file-to-run: 'run_me.sh'
