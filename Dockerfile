@@ -1,9 +1,8 @@
 # Container image that runs your code
-# Runtime is about 2GB smaller, but missing lots of python libs
-FROM pytorch/pytorch:1.5.1-cuda10.1-cudnn7-runtime
-#FROM pytorch/pytorch:1.5.1-cuda10.1-cudnn7-devel
+# Runtime is about 2GB smaller, but missing some python libs
+FROM pytorch/pytorch:1.7.0-cuda11.0-cudnn8-runtime
 
-# Need to install pip3 to test requirements
+# Update and add sudo to allow for in-docker installs
 RUN apt-get update && apt-get install -y sudo
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
