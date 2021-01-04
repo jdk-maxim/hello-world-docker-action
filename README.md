@@ -15,8 +15,9 @@ defult run_me.sh
 
 Numerical exit code resulting from `file-to-run`
 
-## Example usage
-
+## Example Usage
+```yaml
 uses: MaximIntegratedAI/pytorch-docker-action@v1
 with:
   file-to-run: 'run_me.sh'
+```
